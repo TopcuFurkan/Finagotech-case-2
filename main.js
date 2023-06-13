@@ -44,7 +44,7 @@ function main() {
     rl.question('Dizi Elemanlarını Giriniz: ', arrInput => {
       arr = arrInput.split('').map(Number);
       
-      if (arr.every(num => num >= 1 && num <= 5)) {   //girilen sayıların [1,5] arakığında olduğunu kontroll eder
+      if (arr.every(num => num >= 1 && num <= 5)) {   //girilen sayıların [1,5] aralığında olduğunu kontrol eder
         const result = uniqueWolfs(arr);
         console.log(result);
       } else {
